@@ -153,7 +153,7 @@ backgroundcolor={\color{cream}}}
 Ligęza, for his patience, knowledge and support.
 I would also like to express my gratitude to my closest family and my fiancée,
 for providing me with continuous support and encouragement throughout
-my years of study and through the process of  writing this paper.}}
+my years of study and through the process of  writing this MSc thesis.}}
 \titlepages
 \setcounter{tocdepth}{2}
 
@@ -184,7 +184,6 @@ when some engineers noticed its use within electrical circuits. Later
 on, due to the invention of commonly used Von Neumann architecture\footnote{\url{www.wikipedia.org/wiki/Von\_Neumann\_architecture}},
 this representation of data became more and more popular dominating the computer technology in a short time.
 
-%SM: Nie jestem pewien czy o to chodzi.
 This architecture assumed the existence of Arithmetic-Logic Unit (ALU). This unit was basically the real world
 implementation of the Boolean Algebra. In theory this unit had  two Boolean vector inputs, and one output. It could perform basic
 algebraic operations, like addition or basic logical operations like AND or NOT. According to \cite{Matravers:2011}, this architecture describes the structure on which most of today's computers are built.
@@ -249,12 +248,14 @@ SAT solvers have to keep up with rest of the world.
 \section{Goals}
 \label{sec:goals}
 
-The goal of this thesis is to design and develop an experimental, flexible SAT solver with open architecture. It will contain various combinations of algorithms that allow to solve
-Satisfiability problems encoded in CNF\footnote{Conjunctive Normal Form}. One of the primary focuses is that the resulting code
-should be  easy-to-understand, maintain and be further developed later on. The solver will be fully
-re-configurable by the user, with various choice of algorithms in
-every aspect of solver. It will also be easy to add user-defined
-functions to the whole solver structure. 
+The goals of this thesis are:
+\begin{itemize}
+\item An attempt to implement a SAT solver basing on literature presentation of algorithms.
+\item Keep the architecture open for easy experiments.
+\item Allow the user to reconfigure the implemented solver.
+\item Perform some experimental evaluation.
+\item Allow an easy extensions of core functionalities of the solver.
+\end{itemize}
 
 To keep this solver well-readable,
 it will be implemented in Python 3.6, using as little external packages
@@ -740,7 +741,7 @@ but there are many other interesting implementations as well.
 
 
 
-\chapter{Basic SAT Heuristics}
+\chapter{Basic SAT Processing}
 \label{chap:Heuristics}
 
 \section{Preprocessing}
